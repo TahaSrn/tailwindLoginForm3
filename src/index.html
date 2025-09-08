@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <div class="w-full h-[100vh] bg-whiteFirst flex flex-col items-center relative overflow-hidden">
+
+        <img class="absolute h-[60%] w-[20%] rotate-90 top-[-22%] right-[1.5%]" src="/src/images/greenPatt.png" alt="">
+
+        <div class="w-[80%] h-[10%] flex justify-center items-center font-secS text-blueFirst text-[2.7vw] letSpc2">
+            <h1>
+                Login Form
+            </h1>
+        </div>
+        <div class="w-[70%] h-[80%] bg-white rounded-3xl z-40 bxSh flex items-center">
+            <div class="w-1/2 h-full flex items-center justify-end ">
+                <img src="/src/images/whiteblackPatt.png" style="margin-right: 20px;" class=" w-[75%] h-[65%]" alt="">
+            </div>
+            <div class="w-[45%] h-[75%] flex flex-col">
+                <div class="h-[20%] w-full">
+                    <h2 class="font-secB text-blueSecond text-[2.2vw]">login</h2>
+                    <p class="font-secR text-blueSecond">Don`t have an account? <span class="text-orangeFirst"> Create
+                            Now</span></p>
+                </div>
+                <form class="flex flex-col gap-[7%] items-start justify-end h-1/2 w-full">
+                    <input
+                        class="w-[70%] h-[20%] outline-2 rounded-lg outline-blueFirst placeholder:text-blueFirst font-secR"
+                        type="email" placeholder="Email">
+                    <input
+                        class="w-[70%] h-[20%] outline-2 rounded-lg outline-blueFirst placeholder:text-blueFirst font-secR"
+                        type="password" placeholder="Password">
+                    <div class="w-[70%] h-[35%]">
+                        <input
+                            class="w-full h-[68%] bg-gradient-to-r from-[#EE5757] to-[#FE904B] font-secB text-white rounded-lg text-[1.2vw]"
+                            type="submit" value="Login">
+                        <p class="text-[1vw] text-blueFirst">Forgot a password?</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

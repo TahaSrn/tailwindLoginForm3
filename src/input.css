@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@font-face {
+    font-family: secS;
+    src: url("/src/font/secureSansPro/source-sans-pro.semibold.ttf");
+}
+@font-face {
+    font-family: secB;
+    src: url("/src/font/secureSansPro/source-sans-pro.bold.ttf");
+}
+@font-face {
+    font-family: secR;
+    src: url("/src/font/secureSansPro/source-sans-pro.regular.ttf");
+}
+@theme{
+    --color-whiteFirst:#F9F9F9;
+    --color-blueFirst:#207198;
+    --color-blueSecond:#0E4A67;
+    --color-blueThird:#86C9F6;
+    --color-orangeFirst:#EE5757;
+    --font-secR : "secR";
+    --font-secB : "secB";
+    --font-secS : "secS";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer utilities{
+    .letSpc2{
+        letter-spacing: 2px;
+    }
+    .bxSh{
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+}
