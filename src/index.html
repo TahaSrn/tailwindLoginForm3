@@ -9,41 +9,121 @@
 </head>
 
 <body>
-    <div class="w-full h-[100vh] bg-whiteFirst flex flex-col items-center relative overflow-hidden">
-
+    <div class=" w-full h-[100vh] bg-whiteFirst flex flex-col items-center justify-center relative overflow-hidden">
+        
         <img class="absolute h-[60%] w-[20%] rotate-90 top-[-22%] right-[1.5%]" src="/src/images/greenPatt.png" alt="">
-
-        <div class="w-[80%] h-[10%] flex justify-center items-center font-secS text-blueFirst text-[2.7vw] letSpc2">
-            <h1>
-                Login Form
-            </h1>
-        </div>
-        <div class="w-[70%] h-[80%] bg-white rounded-3xl z-40 bxSh flex items-center">
+        <img class="absolute h-2/3 w-1/4 left-0 bottom-[-15%]" src="/src/images/greenPatt.png" alt="">
+        <img class="absolute w-1/5 right-[10%] top-[45%]" src="/src/images/orangePatt.png" alt="">
+        
+        <input type="checkbox" id="check" class="peer">
+        <!-- for login -->
+        <div class="w-[70%] h-[90%] bg-white rounded-3xl z-40 bxSh flex items-center opacity-100 visible peer-checked:opacity-0 peer-checked:hidden">
             <div class="w-1/2 h-full flex items-center justify-end ">
                 <img src="/src/images/whiteblackPatt.png" style="margin-right: 20px;" class=" w-[75%] h-[65%]" alt="">
             </div>
-            <div class="w-[45%] h-[75%] flex flex-col">
+            <div style="margin-left: 3%;" class="w-[45%] h-[75%] flex flex-col">
                 <div class="h-[20%] w-full">
-                    <h2 class="font-secB text-blueSecond text-[2.2vw]">login</h2>
-                    <p class="font-secR text-blueSecond">Don`t have an account? <span class="text-orangeFirst"> Create
-                            Now</span></p>
+                    <h2 class="font-secB text-blueSecond text-[2.5vw]">login</h2>
+                    <p class="font-secR text-blueSecond">Don`t have an account? <label for="check" class="text-orangeFirst cursor-pointer"> Create
+                            Now</label></p>
                 </div>
                 <form class="flex flex-col gap-[7%] items-start justify-end h-1/2 w-full">
                     <input
-                        class="w-[70%] h-[20%] outline-2 rounded-lg outline-blueFirst placeholder:text-blueFirst font-secR"
+                        style="padding-left: 10px;" class="w-[70%] h-[20%] outline-2 rounded-lg outline-blueFirst placeholder:text-blueFirst font-secR focus:outline-green-500 duration-300 transition-all "
                         type="email" placeholder="Email">
                     <input
-                        class="w-[70%] h-[20%] outline-2 rounded-lg outline-blueFirst placeholder:text-blueFirst font-secR"
+                        style="padding-left: 10px;" class="w-[70%] h-[20%] outline-2 rounded-lg outline-blueFirst placeholder:text-blueFirst font-secR focus:outline-green-500 duration-300 transition-all "
                         type="password" placeholder="Password">
                     <div class="w-[70%] h-[35%]">
                         <input
-                            class="w-full h-[68%] bg-gradient-to-r from-[#EE5757] to-[#FE904B] font-secB text-white rounded-lg text-[1.2vw]"
+                            class="w-full h-[55%] bg-gradient-to-r from-[#EE5757] to-[#FE904B] font-secB text-white rounded-lg text-[1.2vw] cursor-pointer"
                             type="submit" value="Login">
                         <p class="text-[1vw] text-blueFirst">Forgot a password?</p>
                     </div>
                 </form>
+                <div class="h-[30%] w-[70%] flex flex-col">
+                    <div class="flex items-center justify-center w-full h-[30%]">
+                        <div class="w-28 border-t border-1 border-gray-500"></div>
+                        <span class="mx-2 text-[1.7vw]">OR</span>
+                        <div class="w-28 border-t border-1 border-gray-500"></div>
+                    </div>
+                    <div class="w-full h-[70%] flex flex-col gap-[10%]">
+                        <div
+                            class="w-full h-[45%] bg-blueForth flex items-center justify-center gap-[2%] rounded-lg outline-2 outline-blueSecond font-secR active:bg-blue-400 transition-all duration-150 cursor-pointer">
+                            <div class="h-full w-[10%] flex items-center justify-center">
+                                <img class="h-[70%]" src="/src/images/facebook.png" alt="">
+                            </div>
+                            <div class="h-full w-[50%] flex items-center">
+                                <p class="text-blueSecond"> Continue with Facebook</p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full h-[45%] bg-blueForth flex items-center justify-center gap-[2%] rounded-lg outline-2 outline-blueSecond font-secR active:bg-blue-400 transition-all duration-150 cursor-pointer">
+                            <div class="h-full w-[10%] flex items-center justify-center">
+                                <img class="h-[70%]" src="/src/images/google.png" alt="">
+                            </div>
+                            <div class="h-full w-[50%] flex items-center">
+                                <p class="text-blueSecond"> Continue with Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- for signUP -->
+        <div class="w-[70%] h-[90%] bg-white rounded-3xl z-40 bxSh hidden items-center opacity-0 peer-checked:opacity-100 peer-checked:flex">
+            <div class="w-1/2 h-full flex items-center justify-end ">
+                <img src="/src/images/whiteblackPatt.png" style="margin-right: 20px;" class=" w-[75%] h-[65%]" alt="">
+            </div>
+            <div style="margin-left: 3%;" class="w-[45%] h-[75%] flex flex-col">
+                <div class="h-[20%] w-full">
+                    <h2 class="font-secB text-blueSecond text-[2.5vw]">Create Your Account</h2>
+                    <p class="font-secR text-blueSecond">Already have an account? <label for="check" class="text-orangeFirst cursor-pointer"> login</label></p>
+                </div>
+                <form class="flex flex-col gap-[7%] items-start justify-end h-1/2 w-full">
+                    <input
+                        style="padding-left: 10px;" class="w-[70%] h-[20%] outline-2 rounded-lg outline-blueFirst placeholder:text-blueFirst font-secR focus:outline-green-500 duration-300 transition-all "
+                        type="email" placeholder="Email">
+                    <input
+                        style="padding-left: 10px;" class="w-[70%] h-[20%] outline-2 rounded-lg outline-blueFirst placeholder:text-blueFirst font-secR focus:outline-green-500 duration-300 transition-all "
+                        type="password" placeholder="Password">
+                    <div class="w-[70%] h-[35%]">
+                        <input
+                            class="w-full h-[55%] bg-gradient-to-r from-[#EE5757] to-[#FE904B] font-secB text-white rounded-lg text-[1.2vw] cursor-pointer"
+                            type="submit" value="Login">
+                        <p class="text-[1vw] text-blueFirst">Forgot a password?</p>
+                    </div>
+                </form>
+                <div class="h-[30%] w-[70%] flex flex-col">
+                    <div class="flex items-center justify-center w-full h-[30%]">
+                        <div class="w-28 border-t border-1 border-gray-500"></div>
+                        <span class="mx-2 text-[1.7vw]">OR</span>
+                        <div class="w-28 border-t border-1 border-gray-500"></div>
+                    </div>
+                    <div class="w-full h-[70%] flex flex-col gap-[10%]">
+                        <div
+                            class="w-full h-[45%] bg-blueForth flex items-center justify-center gap-[2%] rounded-lg outline-2 outline-blueSecond font-secR active:bg-blue-400 transition-all duration-150 cursor-pointer">
+                            <div class="h-full w-[10%] flex items-center justify-center">
+                                <img class="h-[70%]" src="/src/images/facebook.png" alt="">
+                            </div>
+                            <div class="h-full w-[50%] flex items-center">
+                                <p class="text-blueSecond"> Continue with Facebook</p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full h-[45%] bg-blueForth flex items-center justify-center gap-[2%] rounded-lg outline-2 outline-blueSecond font-secR active:bg-blue-400 transition-all duration-150 cursor-pointer">
+                            <div class="h-full w-[10%] flex items-center justify-center">
+                                <img class="h-[70%]" src="/src/images/google.png" alt="">
+                            </div>
+                            <div class="h-full w-[50%] flex items-center">
+                                <p class="text-blueSecond"> Continue with Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 
