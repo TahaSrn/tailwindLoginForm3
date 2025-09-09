@@ -48,7 +48,21 @@
         translate:0 10px;
     }
 }
+@keyframes circleRotate{
+    0%{
+        rotate: 0;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
 
 .pattSlowWalk{
     animation: slowWalk 6s ease-in-out infinite;
+}
+.circleRotate{
+    animation: circleRotate 25s ease-in-out infinite;
 }
